@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='css/style.css'/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <title>Quiz</title>
+</head>
+<body>
+<!-- start quiz -->
+<div class="start-Q">
+    <button id="btn-start" class="btn-start">Start Quiz</button>
+</div>
+<!-- Rules box -->
+<div id="rules-box" class="rules-box">
+    <div class="title">
+<span>Some Rules For Quiz 🤓</span>
+    </div>
+    <div class="rules">
+        <div class="rule">1. You will have only <span>5 Seconds </span> per each question </div>
+        <div class="rule">2. Once you select your answer, you can’t reselect</div>
+        <div class="rule">3. You can’t exit from the quiz while you’re playing</div>
+        <div class="rule">4. Your score will appear once you finish quiz</div>
+    </div>
+    <div class="buttons">
+        <button id="exit" class="exit">Exit Quiz</button>
+        <button  id="begin" class="begin">Continue</button>
+    </div>
+</div>
+
+<!-- start quiz box -->
+<div id="quiz-box" class="quiz-box">
+    <header>
+         <div class="head">Do Your Best 👀</div>
+        <div class="timer">
+            <div class="time-text">Time Left </div>
+            <div id="timer-sec" class="timer-sec">5</div>
+        </div>
+    </header>
+    <section>
+        <div class="que-text">
+        </div>
+        <div class="options">
+            <!-- <div class="option">
+                <span>Al-ahly</span>
+                <div class="icon t"><i class="fa-solid fa-check"></i></div>
+            </div>
+            <div class="option">
+                <span>Al-Ahly</span>
+                <div class="icon f"><i class="fa-solid fa-x"></i></div>
+            </div>
+            <div class="option">
+                <span>Al-Ahly SC</span>
+            </div>
+            <div class="option">
+                <span> All The Above ❤️🦅</span>
+            </div> -->
+        </div>
+    </section>
+
+
+<!-- fOOTER -->
+<footer>
+    <div id="total" class="total">
+        <!-- <span><p>2</p>of<p>10</p>Questions</span> -->
+    </div>
+    <button id="next-btn" class="next-btn">Next Que</button>
+</footer>
+    </div>
+    <!-- quiz Done -->
+    <div id="result" class="result">
+        <div class="icon"><i class="fa-solid fa-star"></i></div>
+        <div class="com-text">You’ve Completed Quiz🥳</div>
+        <div id="score-text" class="score">
+            <!--<span> You Got <p>2</p> Out of <p>10</p></span>  -->
+        </div>
+        <div  class="buttons">
+         
+            <button class="exit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="js/Questions.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
